@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "doctor-with-stethoscope-holding-blood-bag-donate-vector-20012109.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "doctor-with-stethoscope-holding-blood-bag-donate-vector-20012109@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "doctor-with-stethoscope-holding-blood-bag-donate-vector-20012109@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

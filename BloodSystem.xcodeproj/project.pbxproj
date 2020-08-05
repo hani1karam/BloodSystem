@@ -3,29 +3,97 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44D02F3E14FA8DDF92B2F881 /* Pods_BloodSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C20402BCA06E20B7CCF31E /* Pods_BloodSystem.framework */; };
 		D715B9EC24DA16C600CFCEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715B9EB24DA16C600CFCEB0 /* AppDelegate.swift */; };
 		D715B9EE24DA16C600CFCEB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715B9ED24DA16C600CFCEB0 /* SceneDelegate.swift */; };
-		D715B9F024DA16C600CFCEB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715B9EF24DA16C600CFCEB0 /* ViewController.swift */; };
+		D715B9F024DA16C600CFCEB0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715B9EF24DA16C600CFCEB0 /* HomeVC.swift */; };
 		D715B9F324DA16C600CFCEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D715B9F124DA16C600CFCEB0 /* Main.storyboard */; };
 		D715B9F624DA16C600CFCEB0 /* BloodSystem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D715B9F424DA16C600CFCEB0 /* BloodSystem.xcdatamodeld */; };
 		D715B9F824DA16CB00CFCEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D715B9F724DA16CB00CFCEB0 /* Assets.xcassets */; };
 		D715B9FB24DA16CB00CFCEB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D715B9F924DA16CB00CFCEB0 /* LaunchScreen.storyboard */; };
+		D715BA0824DA18AE00CFCEB0 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D715BA0324DA18AD00CFCEB0 /* Cairo-Regular.ttf */; };
+		D715BA0924DA18AE00CFCEB0 /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D715BA0424DA18AD00CFCEB0 /* Cairo-ExtraLight.ttf */; };
+		D715BA0A24DA18AE00CFCEB0 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D715BA0524DA18AE00CFCEB0 /* Cairo-Black.ttf */; };
+		D715BA0B24DA18AE00CFCEB0 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D715BA0624DA18AE00CFCEB0 /* Cairo-Light.ttf */; };
+		D715BA0C24DA18AE00CFCEB0 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D715BA0724DA18AE00CFCEB0 /* Cairo-Bold.ttf */; };
+		D715BA0E24DA18B300CFCEB0 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D715BA0D24DA18B300CFCEB0 /* Cairo-SemiBold.ttf */; };
+		D715BA1024DA1A6D00CFCEB0 /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA0F24DA1A6D00CFCEB0 /* DesignButton.swift */; };
+		D715BA1224DA203300CFCEB0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA1124DA203300CFCEB0 /* LoginVC.swift */; };
+		D715BA1424DA225F00CFCEB0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA1324DA225F00CFCEB0 /* BaseViewController.swift */; };
+		D715BA1924DA230E00CFCEB0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA1824DA230E00CFCEB0 /* NetworkManager.swift */; };
+		D715BA1C24DA234900CFCEB0 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA1B24DA234900CFCEB0 /* LoginModel.swift */; };
+		D715BA1E24DA237C00CFCEB0 /* LoginHospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA1D24DA237C00CFCEB0 /* LoginHospital.swift */; };
+		D715BA2024DA239B00CFCEB0 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA1F24DA239B00CFCEB0 /* RegisterModel.swift */; };
+		D715BA2224DA23EB00CFCEB0 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA2124DA23EB00CFCEB0 /* Toast.swift */; };
+		D715BA2424DA26FE00CFCEB0 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA2324DA26FE00CFCEB0 /* RegisterVC.swift */; };
+		D715BA2624DA33DC00CFCEB0 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA2524DA33DC00CFCEB0 /* LocationVC.swift */; };
+		D715BA2824DA36BE00CFCEB0 /* HomeLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA2724DA36BE00CFCEB0 /* HomeLocationVC.swift */; };
+		D715BA2A24DA377300CFCEB0 /* PatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA2924DA377300CFCEB0 /* PatientVC.swift */; };
+		D715BA2C24DA381600CFCEB0 /* DonorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA2B24DA381600CFCEB0 /* DonorVC.swift */; };
+		D715BA2E24DA4BF200CFCEB0 /* FirstType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA2D24DA4BF200CFCEB0 /* FirstType.swift */; };
+		D715BA3024DA4C0100CFCEB0 /* SecondType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA2F24DA4C0100CFCEB0 /* SecondType.swift */; };
+		D715BA3224DA4CB200CFCEB0 /* HospitalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA3124DA4CB100CFCEB0 /* HospitalsModel.swift */; };
+		D715BA3424DA57DD00CFCEB0 /* Hospital.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D715BA3324DA57DD00CFCEB0 /* Hospital.storyboard */; };
+		D715BA3624DA58AA00CFCEB0 /* LoginHospitalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715BA3524DA58AA00CFCEB0 /* LoginHospitalVC.swift */; };
+		D7321A2724DB098000CC109A /* UPload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7321A2624DB098000CC109A /* UPload.swift */; };
+		D7321A2924DB0DC900CC109A /* TESTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7321A2824DB0DC900CC109A /* TESTVC.swift */; };
+		D7321A2B24DB103A00CC109A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7321A2A24DB103900CC109A /* GoogleService-Info.plist */; };
+		D77FD33C24DA64AB00FC067B /* HomeHospitalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77FD33B24DA64AB00FC067B /* HomeHospitalVC.swift */; };
+		D77FD33E24DA6E2200FC067B /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77FD33D24DA6E2200FC067B /* StartVC.swift */; };
+		D77FD34024DA759A00FC067B /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77FD33F24DA759A00FC067B /* EditVC.swift */; };
+		D77FD34224DA77BA00FC067B /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77FD34124DA77BA00FC067B /* NetworkHelper.swift */; };
+		D77FD34424DA7C2500FC067B /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77FD34324DA7C2500FC067B /* UploadVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B96514D6C40B5A66266AAD3 /* Pods-BloodSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodSystem.release.xcconfig"; path = "Target Support Files/Pods-BloodSystem/Pods-BloodSystem.release.xcconfig"; sourceTree = "<group>"; };
+		44C20402BCA06E20B7CCF31E /* Pods_BloodSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloodSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95614F8097EF17B856047F3B /* Pods-BloodSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodSystem.debug.xcconfig"; path = "Target Support Files/Pods-BloodSystem/Pods-BloodSystem.debug.xcconfig"; sourceTree = "<group>"; };
 		D715B9E824DA16C600CFCEB0 /* BloodSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D715B9EB24DA16C600CFCEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D715B9ED24DA16C600CFCEB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D715B9EF24DA16C600CFCEB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D715B9EF24DA16C600CFCEB0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		D715B9F224DA16C600CFCEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D715B9F524DA16C600CFCEB0 /* BloodSystem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BloodSystem.xcdatamodel; sourceTree = "<group>"; };
 		D715B9F724DA16CB00CFCEB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D715B9FA24DA16CB00CFCEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D715B9FC24DA16CB00CFCEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D715BA0324DA18AD00CFCEB0 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		D715BA0424DA18AD00CFCEB0 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D715BA0524DA18AE00CFCEB0 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
+		D715BA0624DA18AE00CFCEB0 /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
+		D715BA0724DA18AE00CFCEB0 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		D715BA0D24DA18B300CFCEB0 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		D715BA0F24DA1A6D00CFCEB0 /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
+		D715BA1124DA203300CFCEB0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D715BA1324DA225F00CFCEB0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D715BA1824DA230E00CFCEB0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D715BA1B24DA234900CFCEB0 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		D715BA1D24DA237C00CFCEB0 /* LoginHospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHospital.swift; sourceTree = "<group>"; };
+		D715BA1F24DA239B00CFCEB0 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		D715BA2124DA23EB00CFCEB0 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		D715BA2324DA26FE00CFCEB0 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		D715BA2524DA33DC00CFCEB0 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		D715BA2724DA36BE00CFCEB0 /* HomeLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocationVC.swift; sourceTree = "<group>"; };
+		D715BA2924DA377300CFCEB0 /* PatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientVC.swift; sourceTree = "<group>"; };
+		D715BA2B24DA381600CFCEB0 /* DonorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorVC.swift; sourceTree = "<group>"; };
+		D715BA2D24DA4BF200CFCEB0 /* FirstType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstType.swift; sourceTree = "<group>"; };
+		D715BA2F24DA4C0100CFCEB0 /* SecondType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondType.swift; sourceTree = "<group>"; };
+		D715BA3124DA4CB100CFCEB0 /* HospitalsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsModel.swift; sourceTree = "<group>"; };
+		D715BA3324DA57DD00CFCEB0 /* Hospital.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hospital.storyboard; sourceTree = "<group>"; };
+		D715BA3524DA58AA00CFCEB0 /* LoginHospitalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHospitalVC.swift; sourceTree = "<group>"; };
+		D7321A2624DB098000CC109A /* UPload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPload.swift; sourceTree = "<group>"; };
+		D7321A2824DB0DC900CC109A /* TESTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TESTVC.swift; sourceTree = "<group>"; };
+		D7321A2A24DB103900CC109A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D77FD33B24DA64AB00FC067B /* HomeHospitalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHospitalVC.swift; sourceTree = "<group>"; };
+		D77FD33D24DA6E2200FC067B /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		D77FD33F24DA759A00FC067B /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
+		D77FD34124DA77BA00FC067B /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		D77FD34324DA7C2500FC067B /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +101,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D02F3E14FA8DDF92B2F881 /* Pods_BloodSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22DA3C97B5DDC11EF946C7BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95614F8097EF17B856047F3B /* Pods-BloodSystem.debug.xcconfig */,
+				3B96514D6C40B5A66266AAD3 /* Pods-BloodSystem.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D4A7CE7C2CB63D328FBBEF98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44C20402BCA06E20B7CCF31E /* Pods_BloodSystem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D715B9DF24DA16C600CFCEB0 = {
 			isa = PBXGroup;
 			children = (
 				D715B9EA24DA16C600CFCEB0 /* BloodSystem */,
 				D715B9E924DA16C600CFCEB0 /* Products */,
+				22DA3C97B5DDC11EF946C7BA /* Pods */,
+				D4A7CE7C2CB63D328FBBEF98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +146,88 @@
 		D715B9EA24DA16C600CFCEB0 /* BloodSystem */ = {
 			isa = PBXGroup;
 			children = (
+				D7321A2A24DB103900CC109A /* GoogleService-Info.plist */,
+				D715B9F924DA16CB00CFCEB0 /* LaunchScreen.storyboard */,
 				D715B9EB24DA16C600CFCEB0 /* AppDelegate.swift */,
 				D715B9ED24DA16C600CFCEB0 /* SceneDelegate.swift */,
-				D715B9EF24DA16C600CFCEB0 /* ViewController.swift */,
-				D715B9F124DA16C600CFCEB0 /* Main.storyboard */,
+				D715BA1724DA22CD00CFCEB0 /* Controller */,
+				D715BA1624DA22C000CFCEB0 /* View */,
 				D715B9F724DA16CB00CFCEB0 /* Assets.xcassets */,
-				D715B9F924DA16CB00CFCEB0 /* LaunchScreen.storyboard */,
 				D715B9FC24DA16CB00CFCEB0 /* Info.plist */,
+				D715BA1A24DA232B00CFCEB0 /* Model */,
+				D715BA1524DA22B300CFCEB0 /* Helper */,
 				D715B9F424DA16C600CFCEB0 /* BloodSystem.xcdatamodeld */,
 			);
 			path = BloodSystem;
+			sourceTree = "<group>";
+		};
+		D715BA0224DA188400CFCEB0 /* Fonr */ = {
+			isa = PBXGroup;
+			children = (
+				D715BA0524DA18AE00CFCEB0 /* Cairo-Black.ttf */,
+				D715BA0D24DA18B300CFCEB0 /* Cairo-SemiBold.ttf */,
+				D715BA0724DA18AE00CFCEB0 /* Cairo-Bold.ttf */,
+				D715BA0424DA18AD00CFCEB0 /* Cairo-ExtraLight.ttf */,
+				D715BA0624DA18AE00CFCEB0 /* Cairo-Light.ttf */,
+				D715BA0324DA18AD00CFCEB0 /* Cairo-Regular.ttf */,
+			);
+			path = Fonr;
+			sourceTree = "<group>";
+		};
+		D715BA1524DA22B300CFCEB0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D715BA0F24DA1A6D00CFCEB0 /* DesignButton.swift */,
+				D715BA1324DA225F00CFCEB0 /* BaseViewController.swift */,
+				D715BA2124DA23EB00CFCEB0 /* Toast.swift */,
+				D77FD34124DA77BA00FC067B /* NetworkHelper.swift */,
+				D715BA0224DA188400CFCEB0 /* Fonr */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D715BA1624DA22C000CFCEB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D715B9F124DA16C600CFCEB0 /* Main.storyboard */,
+				D715BA3324DA57DD00CFCEB0 /* Hospital.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D715BA1724DA22CD00CFCEB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D77FD33D24DA6E2200FC067B /* StartVC.swift */,
+				D715B9EF24DA16C600CFCEB0 /* HomeVC.swift */,
+				D715BA1124DA203300CFCEB0 /* LoginVC.swift */,
+				D715BA2324DA26FE00CFCEB0 /* RegisterVC.swift */,
+				D715BA2524DA33DC00CFCEB0 /* LocationVC.swift */,
+				D715BA2724DA36BE00CFCEB0 /* HomeLocationVC.swift */,
+				D715BA2924DA377300CFCEB0 /* PatientVC.swift */,
+				D715BA2B24DA381600CFCEB0 /* DonorVC.swift */,
+				D715BA2D24DA4BF200CFCEB0 /* FirstType.swift */,
+				D715BA2F24DA4C0100CFCEB0 /* SecondType.swift */,
+				D715BA3524DA58AA00CFCEB0 /* LoginHospitalVC.swift */,
+				D77FD33B24DA64AB00FC067B /* HomeHospitalVC.swift */,
+				D77FD33F24DA759A00FC067B /* EditVC.swift */,
+				D77FD34324DA7C2500FC067B /* UploadVC.swift */,
+				D7321A2824DB0DC900CC109A /* TESTVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D715BA1A24DA232B00CFCEB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D715BA1824DA230E00CFCEB0 /* NetworkManager.swift */,
+				D715BA1B24DA234900CFCEB0 /* LoginModel.swift */,
+				D715BA1D24DA237C00CFCEB0 /* LoginHospital.swift */,
+				D715BA1F24DA239B00CFCEB0 /* RegisterModel.swift */,
+				D715BA3124DA4CB100CFCEB0 /* HospitalsModel.swift */,
+				D7321A2624DB098000CC109A /* UPload.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D715B9FF24DA16CB00CFCEB0 /* Build configuration list for PBXNativeTarget "BloodSystem" */;
 			buildPhases = (
+				9E07744B41E556ADF6457B05 /* [CP] Check Pods Manifest.lock */,
 				D715B9E424DA16C600CFCEB0 /* Sources */,
 				D715B9E524DA16C600CFCEB0 /* Frameworks */,
 				D715B9E624DA16C600CFCEB0 /* Resources */,
+				27390FA66F103C8E8FF33877 /* [CP] Embed Pods Frameworks */,
+				9499F6D80084D35AC6A3B60D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,22 +292,113 @@
 			buildActionMask = 2147483647;
 			files = (
 				D715B9FB24DA16CB00CFCEB0 /* LaunchScreen.storyboard in Resources */,
+				D715BA0A24DA18AE00CFCEB0 /* Cairo-Black.ttf in Resources */,
+				D715BA0E24DA18B300CFCEB0 /* Cairo-SemiBold.ttf in Resources */,
+				D715BA0924DA18AE00CFCEB0 /* Cairo-ExtraLight.ttf in Resources */,
+				D715BA3424DA57DD00CFCEB0 /* Hospital.storyboard in Resources */,
 				D715B9F824DA16CB00CFCEB0 /* Assets.xcassets in Resources */,
+				D715BA0824DA18AE00CFCEB0 /* Cairo-Regular.ttf in Resources */,
 				D715B9F324DA16C600CFCEB0 /* Main.storyboard in Resources */,
+				D7321A2B24DB103A00CC109A /* GoogleService-Info.plist in Resources */,
+				D715BA0C24DA18AE00CFCEB0 /* Cairo-Bold.ttf in Resources */,
+				D715BA0B24DA18AE00CFCEB0 /* Cairo-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27390FA66F103C8E8FF33877 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloodSystem/Pods-BloodSystem-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloodSystem/Pods-BloodSystem-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BloodSystem/Pods-BloodSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9499F6D80084D35AC6A3B60D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloodSystem/Pods-BloodSystem-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloodSystem/Pods-BloodSystem-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BloodSystem/Pods-BloodSystem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E07744B41E556ADF6457B05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BloodSystem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D715B9E424DA16C600CFCEB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D715B9F024DA16C600CFCEB0 /* ViewController.swift in Sources */,
+				D7321A2924DB0DC900CC109A /* TESTVC.swift in Sources */,
+				D715B9F024DA16C600CFCEB0 /* HomeVC.swift in Sources */,
+				D715BA2224DA23EB00CFCEB0 /* Toast.swift in Sources */,
 				D715B9F624DA16C600CFCEB0 /* BloodSystem.xcdatamodeld in Sources */,
+				D77FD33E24DA6E2200FC067B /* StartVC.swift in Sources */,
+				D715BA1224DA203300CFCEB0 /* LoginVC.swift in Sources */,
+				D7321A2724DB098000CC109A /* UPload.swift in Sources */,
+				D715BA2824DA36BE00CFCEB0 /* HomeLocationVC.swift in Sources */,
+				D77FD33C24DA64AB00FC067B /* HomeHospitalVC.swift in Sources */,
+				D77FD34424DA7C2500FC067B /* UploadVC.swift in Sources */,
 				D715B9EC24DA16C600CFCEB0 /* AppDelegate.swift in Sources */,
+				D715BA1C24DA234900CFCEB0 /* LoginModel.swift in Sources */,
+				D715BA3624DA58AA00CFCEB0 /* LoginHospitalVC.swift in Sources */,
+				D715BA1924DA230E00CFCEB0 /* NetworkManager.swift in Sources */,
+				D715BA2A24DA377300CFCEB0 /* PatientVC.swift in Sources */,
+				D715BA2624DA33DC00CFCEB0 /* LocationVC.swift in Sources */,
+				D715BA2E24DA4BF200CFCEB0 /* FirstType.swift in Sources */,
+				D715BA3224DA4CB200CFCEB0 /* HospitalsModel.swift in Sources */,
+				D715BA2024DA239B00CFCEB0 /* RegisterModel.swift in Sources */,
+				D715BA3024DA4C0100CFCEB0 /* SecondType.swift in Sources */,
+				D77FD34224DA77BA00FC067B /* NetworkHelper.swift in Sources */,
 				D715B9EE24DA16C600CFCEB0 /* SceneDelegate.swift in Sources */,
+				D715BA1424DA225F00CFCEB0 /* BaseViewController.swift in Sources */,
+				D715BA1024DA1A6D00CFCEB0 /* DesignButton.swift in Sources */,
+				D715BA1E24DA237C00CFCEB0 /* LoginHospital.swift in Sources */,
+				D715BA2C24DA381600CFCEB0 /* DonorVC.swift in Sources */,
+				D77FD34024DA759A00FC067B /* EditVC.swift in Sources */,
+				D715BA2424DA26FE00CFCEB0 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +540,7 @@
 		};
 		D715BA0024DA16CB00CFCEB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95614F8097EF17B856047F3B /* Pods-BloodSystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +558,7 @@
 		};
 		D715BA0124DA16CB00CFCEB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B96514D6C40B5A66266AAD3 /* Pods-BloodSystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
