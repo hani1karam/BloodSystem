@@ -24,9 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enableAutoToolbar = true
         IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "التالي"
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
-        GMSServices.provideAPIKey("AIzaSyAV0ussHS30__3QI-IddyCXpnsvkPZkSZA")
-        GMSPlacesClient.provideAPIKey("AIzaSyAV0ussHS30__3QI-IddyCXpnsvkPZkSZA")
-        FirebaseApp.configure()
+         FirebaseApp.configure()
 
 
         return true

@@ -41,6 +41,7 @@
 		D7321A2724DB098000CC109A /* UPload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7321A2624DB098000CC109A /* UPload.swift */; };
 		D7321A2924DB0DC900CC109A /* TESTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7321A2824DB0DC900CC109A /* TESTVC.swift */; };
 		D7321A2B24DB103A00CC109A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7321A2A24DB103900CC109A /* GoogleService-Info.plist */; };
+		D749949C24E3FFB4005C3F68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D749949B24E3FFB4005C3F68 /* ViewController.swift */; };
 		D77FD33C24DA64AB00FC067B /* HomeHospitalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77FD33B24DA64AB00FC067B /* HomeHospitalVC.swift */; };
 		D77FD33E24DA6E2200FC067B /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77FD33D24DA6E2200FC067B /* StartVC.swift */; };
 		D77FD34024DA759A00FC067B /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77FD33F24DA759A00FC067B /* EditVC.swift */; };
@@ -89,6 +90,7 @@
 		D7321A2624DB098000CC109A /* UPload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPload.swift; sourceTree = "<group>"; };
 		D7321A2824DB0DC900CC109A /* TESTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TESTVC.swift; sourceTree = "<group>"; };
 		D7321A2A24DB103900CC109A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D749949B24E3FFB4005C3F68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D77FD33B24DA64AB00FC067B /* HomeHospitalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHospitalVC.swift; sourceTree = "<group>"; };
 		D77FD33D24DA6E2200FC067B /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		D77FD33F24DA759A00FC067B /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			children = (
 				D77FD33D24DA6E2200FC067B /* StartVC.swift */,
 				D715B9EF24DA16C600CFCEB0 /* HomeVC.swift */,
+				D749949B24E3FFB4005C3F68 /* ViewController.swift */,
 				D715BA1124DA203300CFCEB0 /* LoginVC.swift */,
 				D715BA2324DA26FE00CFCEB0 /* RegisterVC.swift */,
 				D715BA2524DA33DC00CFCEB0 /* LocationVC.swift */,
@@ -391,6 +394,7 @@
 				D715BA3224DA4CB200CFCEB0 /* HospitalsModel.swift in Sources */,
 				D715BA2024DA239B00CFCEB0 /* RegisterModel.swift in Sources */,
 				D715BA3024DA4C0100CFCEB0 /* SecondType.swift in Sources */,
+				D749949C24E3FFB4005C3F68 /* ViewController.swift in Sources */,
 				D77FD34224DA77BA00FC067B /* NetworkHelper.swift in Sources */,
 				D715B9EE24DA16C600CFCEB0 /* SceneDelegate.swift in Sources */,
 				D715BA1424DA225F00CFCEB0 /* BaseViewController.swift in Sources */,
