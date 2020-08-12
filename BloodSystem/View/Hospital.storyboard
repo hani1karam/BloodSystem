@@ -13,9 +13,6 @@
         <array key="Cairo-Regular.ttf">
             <string>Cairo-Regular</string>
         </array>
-        <array key="tajawal_regular.ttf">
-            <string>Tajawal-Regular</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Login HospitalVC-->
@@ -154,6 +151,7 @@
                                                         <connections>
                                                             <action selector="Edit:" destination="0oA-Kh-Wic" eventType="touchUpInside" id="3h6-RI-L5O"/>
                                                             <action selector="LoginHospital:" destination="EY4-7O-PG7" eventType="touchUpInside" id="F2A-lL-UWe"/>
+                                                            <segue destination="eAz-0R-CaU" kind="show" identifier="gotoEdit" id="B8f-t3-I7F"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh9-jU-Yxy" customClass="DesignButton" customModule="BloodSystem" customModuleProvider="target">
@@ -216,7 +214,7 @@
         <!--EditVC-->
         <scene sceneID="5bB-CU-Ycl">
             <objects>
-                <viewController storyboardIdentifier="EditVC" id="eAz-0R-CaU" customClass="EditVC" customModule="BloodSystem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditVC" extendedLayoutIncludesOpaqueBars="YES" modalPresentationStyle="fullScreen" id="eAz-0R-CaU" customClass="EditVC" customModule="BloodSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wbb-A2-8Tt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -336,6 +334,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1FQ-dZ-Clh"/>
                     </view>
+                    <navigationItem key="navigationItem" id="t1r-GM-kir"/>
                     <connections>
                         <outlet property="addreess" destination="gor-Dy-Dfh" id="JMA-FJ-E2O"/>
                         <outlet property="email" destination="Yyb-KO-8FX" id="03C-Q6-8jk"/>
@@ -398,24 +397,29 @@
                                 <rect key="frame" x="20" y="588" width="374" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="الهرم" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="t3X-gp-ibi">
-                                <rect key="frame" x="20" y="775" width="374" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12"/>
-                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6JA-Xv-9Iv">
                                 <rect key="frame" x="0.0" y="194" width="414" height="85"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Lx3-eG-Otr" id="9Wu-s9-LCm"/>
+                                    <outlet property="delegate" destination="Lx3-eG-Otr" id="X1o-1u-yJ9"/>
+                                </connections>
                             </pickerView>
                             <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q6S-mY-9uJ">
                                 <rect key="frame" x="0.0" y="331" width="414" height="87"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Lx3-eG-Otr" id="FiJ-u9-Mce"/>
+                                    <outlet property="delegate" destination="Lx3-eG-Otr" id="2VY-7z-axb"/>
+                                </connections>
                             </pickerView>
                             <pickerView tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cwN-my-KJR">
                                 <rect key="frame" x="0.0" y="492" width="414" height="88"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Lx3-eG-Otr" id="1Yx-FO-V2v"/>
+                                    <outlet property="delegate" destination="Lx3-eG-Otr" id="ORN-za-65p"/>
+                                </connections>
                             </pickerView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="avalible" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cdZ-qR-W0s">
                                 <rect key="frame" x="0.0" y="287" width="414" height="36"/>
@@ -533,7 +537,7 @@
                                     <action selector="testvuirs:" destination="G1r-h3-Ouh" eventType="touchUpInside" id="oPf-cu-5YL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO3-ki-mPU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO3-ki-mPU">
                                 <rect key="frame" x="20" y="828" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>

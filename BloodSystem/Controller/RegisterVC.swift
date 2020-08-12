@@ -54,7 +54,7 @@ class RegisterVC: BaseViewController {
                 }
                 
             } else if error != nil {
-                self.showToast(message:user?.message ?? "")
+                self.showToast(message:"Error" ?? "")
 
             }
         }

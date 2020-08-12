@@ -36,7 +36,8 @@ class UploadVC: BaseViewController,UIPickerViewDelegate,UIPickerViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+setupComponent()
+        
     }
     
 
@@ -99,6 +100,7 @@ class UploadVC: BaseViewController,UIPickerViewDelegate,UIPickerViewDataSource {
         
         
     }
+
     
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)

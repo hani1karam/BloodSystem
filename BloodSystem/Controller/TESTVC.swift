@@ -31,7 +31,7 @@ class TESTVC: BaseViewController {
 
     func addArtist(){
         if positive.text == "Postivite" {
-            showToast(message:"لن ليتم تسجيل في السيستم نظرا لان الدم غير صالح عزيزي ")
+            showToast(message:"لن ليتم تسجيل في السيستم نظرا لان الدم غير صالح ")
         }
         else {
     let key = refArrists.childByAutoId().key

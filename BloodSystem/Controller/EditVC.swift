@@ -20,15 +20,15 @@ class EditVC: BaseViewController {
     @IBOutlet weak var phone: UITextField!
     
     var item:HospitalModel?
-     var locationManager  = CLLocationManager()
+    var locationManager  = CLLocationManager()
     let regionInMeters : Double = 500
     var user_lat  : Double = 0
     var user_lon : Double = 0
     var previousLocation  : CLLocation?
     var hospitalUser:HospitalModel?
-
-
-
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,17 +36,17 @@ class EditVC: BaseViewController {
         setupComponent()
         setupComponnt()
     }
- func setupComponent(){
-     name.delegate  = self
-     email.delegate = self
-     phone.delegate = self
-     addreess.delegate = self
-     
-     self.name.text = hospitalUser?.name
-     self.email.text = hospitalUser?.email
-     self.phone.text = "\(hospitalUser?.phone ?? "")"
-     self.addreess.text = hospitalUser?.address
- }
+    func setupComponent(){
+        name.delegate  = self
+        email.delegate = self
+        phone.delegate = self
+        addreess.delegate = self
+        
+        self.name.text = hospitalUser?.name
+        self.email.text = hospitalUser?.email
+        self.phone.text = "\(hospitalUser?.phone ?? "")"
+        self.addreess.text = hospitalUser?.address
+    }
     func loadUserProfile() {
         let id = item?.id
         print("loadUserProfile")
@@ -56,16 +56,16 @@ class EditVC: BaseViewController {
             
             print("sendRequest")
             if err == nil{
-               
-                    
-                    if let user = response.self{
-                        DispatchQueue.main.async {
-                            print("DispatchQueue")
-                            self.name.text = user.name
-                            self.email.text = user.email
-                            self.phone.text = "\(user.phone ?? "")"
-                            self.addreess.text = user.address
-                       
+                
+                
+                if let user = response.self{
+                    DispatchQueue.main.async {
+                        print("DispatchQueue")
+                        self.name.text = user.name
+                        self.email.text = user.email
+                        self.phone.text = "\(user.phone ?? "")"
+                        self.addreess.text = user.address
+                        
                     }
                 }else{
                     self.showToast(message: "غير قادر علي تحميل بيانات الملف الشخصي")
@@ -78,10 +78,10 @@ class EditVC: BaseViewController {
     
     var long: Double = 0.0
     var lat: Double = 0.0
-
-    @IBAction func buDone(_ sender: Any) {
     
-    let param = ["name": name.text ?? "", "email": email.text ?? "", "phone": phone.text ?? "","address":addreess.text ?? "",
+    @IBAction func buDone(_ sender: Any) {
+        
+        let param = ["name": name.text ?? "", "email": email.text ?? "", "phone": phone.text ?? "","address":addreess.text ?? "",
                      "latitude"  : lat,
                      "longitude"  : long] as [String : Any]
         showLoading()
@@ -170,7 +170,7 @@ class EditVC: BaseViewController {
         let lon = mapView.centerCoordinate.longitude
         return CLLocation(latitude: lat, longitude: lon)
     }
-
+    
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -197,7 +197,7 @@ extension EditVC: UITextFieldDelegate {
 extension EditVC{
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         //        self.addressTF.text = ""
-         let center = getCenterLocation(for: mapView)
+        let center = getCenterLocation(for: mapView)
         let geoCoder = CLGeocoder()
         
         guard let previousLocation = self.previousLocation else { return }
@@ -218,19 +218,19 @@ extension EditVC{
             }
             
             if let streetNumber = placemark.subThoroughfare{
-             }
+            }
             
             if let streetName = placemark.thoroughfare{
-             }
+            }
             
             if let city = placemark.locality{
-             }
+            }
             
             if let country = placemark.country{
-             }
+            }
             
             DispatchQueue.main.async {
-             }
+            }
         }
     }
 }
